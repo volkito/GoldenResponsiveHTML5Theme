@@ -1,0 +1,444 @@
+html,
+body,
+#cover {
+    height:100%;
+}
+/* Header image*/
+#cover {
+    background: url('../images/MainBg.png') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+/* Menüyü üstte fix olarak maximum container genişliğini baz alarak sabitledik*/
+.fixed-top  { 
+    max-width: 1200px;
+    margin: 20px auto;
+    transition: 0.2s all linear; /* Menünün beyaz yerlere geldiğinde değişmesi için */
+}
+h1 {
+    margin-top: 20%; /* Küçük ekranlar için*/
+    font-family: 'Droid Serif', serif;
+    color: #fff;
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 700;
+    font-size: 75px;
+    margin-bottom: 30px;
+}
+.btn-primary {
+    background-color: #fed136;
+    border-style: none;
+    text-transform:uppercase; /*Texti büyük harfe çevirdi*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+.btn-primary:hover {
+    background-color: darkorange;
+    color: crimson;
+}
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #fff !important; /* Yazılan css bootsrap kütüphanesi ile çakıştığı için bizim css in önemli olduğunu*/
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fed136 !important;
+}
+
+/* Section Services */
+
+#services {
+    padding: 120px 0;
+}
+.services-top h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.services-top p {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 70px;
+}
+.item-circle img {
+    margin: 0 auto;
+}
+.services-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 24px;
+}
+.services-content p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #777;
+}
+#portfolio {
+    background-color: #f7f7f7;
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+.portfolio-top h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.portfolio-top p {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 70px;
+}
+.card {
+    border-style: none;
+}
+.portfolio-content .row {
+    margin-bottom: 50px;
+    
+}
+.portfolio-content .card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.portfolio-content .card-subtitle{
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    font-style: italic;
+}
+#aboutUs {
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+.aboutUs-top h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.aboutUs-top p {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 70px;
+}
+.aboutUs-content .row {
+    margin-bottom: 90px;
+}
+.aboutUs-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+.aboutUs-content p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #777;
+}
+.aboutUs-content {
+    position: relative;
+}
+.aboutUs-content:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content: " ";
+    width: 4px;
+    background-color: #f1f1f1;
+    left: 50%;
+    margin-left: -2px;
+}
+.about-circle {
+    position: relative;
+    text-align: center;
+}
+.about-circle:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 177px;
+    height: 177px;
+    background-color: #fed136;
+    border-radius: 170px;
+    border: 6px solid #f1f1f1;
+    left: 50%;
+    margin-left: -91.5px;
+}
+.about-circle .yellow-text {
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+#team {
+    padding-top: 120px;
+    padding-bottom: 70px;
+    background-color: #f9f9f9;
+}
+.team-top h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.team-top p {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 70px;
+}
+.team-circle {
+    width: 220px;
+    height: 220px;
+    background-color: black;
+    border-radius: 220px;
+    margin: 0 auto;
+    border: 6px solid #fff;
+    margin-bottom: 20px;
+}
+.team-content h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.team-content h5 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    color: #777;
+}
+.social-icons {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.social-icon {
+    display: inline;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.social-icon .fa {
+    border: 2px solid #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    line-height: 26px;
+}
+.team-content p {
+    margin: 50px auto;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #777;
+}
+#partner {
+    padding: 60px 0;
+    
+}
+#contact {
+    background: url('../images/contactBG.png') no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding: 120px 0;
+}
+.contact-top h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.contact-top p {
+    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 70px;
+}
+#name, #email, #subject {
+    width: 90%;
+    height: 50px;
+    margin-bottom: 26px;
+    border-style: none;
+    border-radius: 3px;
+    padding-left: 20px;
+    margin-left: 5%;
+}
+textarea {
+    width: 90%;
+    height: 203px;
+    border-style: none;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-left: 5%;
+}
+.golden-form-element {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+#footer {
+    padding: 20px 0;
+}
+#footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 40px;
+}
+.company-social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.company-social-icon {
+    display: inline;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: #fff;
+}
+.company-social-icon .fa {
+    width: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: black;
+    line-height: 40px;
+}
+/* fixed-top özelliği verdiğimiz menümüzün ekranı aşağı kaydırdıkça menünün background kısmının beyaz olduğu yerlerde değişmesi için */
+.fixed-top.change-color {
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* Menümüzün mouse ile aşağı kaydırdığımızda 400 pikselde büyük olduğunda menüdedeğişecek yerler */
+.fixed-top.change-fix-top {
+    margin-top: 0;
+    background-color: #000;
+    max-width: 2000px;
+    
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+    
+    #footer p {
+        font-size: 11px;
+        line-height: 30px;
+    }
+    .company-social-icon {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .company-social-icon .fa {
+        width: 30px;
+        width: 30px;
+        border-radius: 30px;
+        line-height: 30px;
+    }
+    h1 {
+        margin-top: 300px;
+        font-size: 36px;
+        font-style: italic;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+    .portfolio-content .card-title {
+    font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    
+    .navbar-collapse {
+         background-color:rgba(0,0,0,0.3); 
+        } 
+    .navbar-light .navbar-toggler {
+         border: 1px solid #fed136;   
+        }
+    h1 {
+        margin-top: 300px;
+        font-size: 25px;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .card {
+        padding-left: 15%;
+        padding-right: 15%;
+        background-color: #f7f7f7;
+    }
+   .aboutUs-content:before {
+    content: "";
+    width: 0px;
+    } 
+    #aboutUs {
+        padding: 0;
+    }
+    #partner .col-md-3 {
+        margin: 20px 0;
+    }
+    #footer .col-md-4 {
+        text-align:center;
+    }
+    .company-social-icons {
+        margin: 0 auto;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        margin-left: 10px;
+    }
+    .aboutUs-top h3 {
+    margin-top: 40px;
+    }
+}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 30px;
+        }
+    .navbar-light .navbar-nav .nav-link {
+        margin-left: 10px;
+    }
+    .portfolio-top h3 {
+    font-size: 20px;
+    }
+    .aboutUs-top h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    }
+    .team-top h3 {
+    font-size: 20px;
+    }
+}
+
+
